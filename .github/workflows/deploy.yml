@@ -21,6 +21,15 @@ jobs:
                   hugo-version: "latest"
                   extended: true
 
+             name: Commit and push if changed
+              run: |-
+                  git diff
+                  git config --global user.email "action@github.com"
+                  git config --global user.name "GitHub Action"
+                  git add -A
+                  git commit -m "ci: update about page (automatically)" || exit 0
+                  git push
+
             - name: Build Web
               run: hugo --minify
 
