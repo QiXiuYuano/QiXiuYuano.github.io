@@ -1,22 +1,15 @@
-<br>
-<br>
-<h2>评论</h2>
-<div style="width: 35px; height: 3px; background-color: rgb(42,77,208); margin-top: 10px; border-radius: 10px;"></div>
-<br/>
-<div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="c338a016-d020-4836-918f-ba373be32e00"
-  data-page-id="{{ .File.UniqueID }}"
-  data-page-url="{{ .RelPermalink }}"
-  data-page-title="{{ .Title }}"
-></div>
-
-{{- $js := resources.GetRemote "https://cusdis.com/js/widget/lang/zh-cn.js" | js.Build (dict "minify" true) -}}
-<script type='text/javascript'>
-  {{ $js.Content | safeJS }}
-</script>
-
-{{- $js := resources.GetRemote "https://cusdis.com/js/cusdis.es.js" | js.Build (dict "minify" true) -}}
-<script type='text/javascript'>
-  {{ $js.Content | safeJS }}
-</script>
+<!-- github comments -->
+<div>    
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">评论</span>
+        <br/>
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://utteranc.es/client.js"
+            repo="blog_comment" 
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+</div>

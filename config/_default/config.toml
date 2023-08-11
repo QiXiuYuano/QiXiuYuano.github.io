@@ -2,14 +2,17 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/getting-started/
 
-theme = "blowfish"
-baseURL = "https://qixiuyuano.github.io/"
+# 网站的一些基础配置：菜单、域名等
+theme = "blowfish"  # 主题名字，和themes文件夹下的一致
+baseURL = "https://qixiuyuano.github.io/" # 绑定的域名
 defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = false  # 是否将默认内容语言的内容放在子目录中
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
-
-enableRobotsTXT = true
-paginate = 20
+enableInlineShortcodes = true #允许内联短码
+enableEmoji =  true # 允许使用 Emoji 表情
+enableRobotsTXT = true  # 允许爬虫抓取到搜索引擎
+paginate = 8
 summaryLength = 0
 
 buildDrafts = false
@@ -17,10 +20,11 @@ buildFuture = false
 
 # googleAnalytics = "G-PEDMYR1V0K"
 
+
 [imaging]
   anchor = 'Center'
 
-[taxonomies]
+[taxonomies]  # 分类配置
   tag = "tags"
   category = "categories"
   author = "authors"
@@ -35,8 +39,9 @@ buildFuture = false
   home = ["HTML", "RSS", "JSON"]
 
 [related]
-  threshold = 0
-  toLower = false
+  threshold = 1
+  includeNewer = true
+  toLower = true
 
     [[related.indices]]
         name = "tags"

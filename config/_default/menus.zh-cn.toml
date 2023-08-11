@@ -43,25 +43,40 @@
 #  weight = 20
 
 [[main]]
-  identifier = "博客"
-  name = "博客"
-  pageRef = "blog"
+  identifier = "home"
+  name = "🏠主页"
+  url = "/" 
   weight = 10
 
 [[main]]
-  name = "随笔"
-  pageRef = "essay"
-  weight = 20
+  identifier = "posts"
+  name = "📚文章"
+  pageRef = "posts"
+  weight = 10
 
 [[main]]
-  name = "标签"
+  identifier = "categories"
+  name = "🗃️分类"
+  pageRef = "categories"
+  weight = 40
+
+[[main]]
+  identifier = "tags"
+  name = "🏷️标签"
   pageRef = "tags"
   weight = 20
 
 [[main]]
-  name = "关于"
+  identifier = "about"
+  name = "🙋🏻‍♂️关于"
   pageRef = "about"
-  weight = 30
+  weight = 40
+
+[[main]]
+  identifier = "links"
+  name = "🤝友链"
+  pageRef = "links"
+  weight = 40
 
 [[main]]
   pre = "github"
@@ -78,5 +93,11 @@
 [[footer]]
   name = "标签"
   pageRef = "tags"
-  weight = 10
+  weight = 20
+
+
+ [[footer]]
+   name = "分类"
+   pageRef = "categories"
+   weight = 30
 

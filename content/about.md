@@ -1,18 +1,24 @@
 ---
-title: "About"
+title: "🙋🏻‍♂️关于"
+showAuthor: true
+showAuthorsBadges: false
 showDate: false
-showViews: false
+description: ""
+sharingLinks: false
+showEdit: false
+draft: false
 showWordCount: false
 showReadingTime: false
-showLikes: false
-showTableOfContents: false
----
-
-## About Me
-- 这里是柒修远的个人博客网站。
-- 我在尝试写博客来记录以及督促。
 
 ---
-## About Site
 
-- 博客是使用Hugo搭建，并部署在GitHub Pages上
+
+
+
+## 关于博客
+---
+##### 一直都有想建立一个属于自己的博客，但因为懒一直给耽搁。故而决定建立此博客告诫自己不要懒惰。对于博客的规划：
+- 俗话说好记性不如烂笔头，无论所学、所见、所想尽量记录下来。
+- 希望把写博客一直坚持下去。
+
+
