@@ -101,7 +101,7 @@
 
 
   {{/*  文章尾部页脚部分设置   */}}
-  <footer class="pt-8 footer-max-w-prose print:hidden">
+  <footer class="pt-8 max-w-prose print:hidden">
    
     {{ $showAuthor := 0 }}
     {{ if .Params.showAuthor | default (.Site.Params.article.showAuthor | default true) }}

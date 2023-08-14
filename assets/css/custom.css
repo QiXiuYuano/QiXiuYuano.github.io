@@ -85,27 +85,9 @@ img:active {
 }
 
 /* 调整页面左右边距，让目录更靠右 */
-.lg\:px-32 {
+/* .lg\:px-32 {
   padding-left: 8rem;
   padding-right: 1rem;
-}
-
-
-/* .prose 类中的激活状态（active）的锚点（<a> 标签） */
-/* .prose :where(a.active):not(:where([class~="not-prose"] *)) {
-  color: #16982b; 
-}
-
-.prose :where(p.active):not(:where([class~="not-prose"] *)) {
-  color: #16982b; 
-}
-
-.prose-invert :where(a.active):not(:where([class~="not-prose"] *)) {
-  color: #16982b; 
-}
-
-.prose-invert :where(p.active):not(:where([class~="not-prose"] *)) {
-  color: #16982b; 
 } */
 
 
@@ -198,7 +180,7 @@ img:active {
 
 
 
-/* 主页最近文章列表标题下划线效果 */
+/* ------------------ 主页最近文章列表标题下划线效果 ---------------------- */
 .article-title-link {
   position: relative;
   text-decoration: none;
@@ -267,11 +249,6 @@ img:active {
   opacity: 1;
 }
 
-/* 调整菜单链接之间的右间距 */
-.menu-space {
-  display: flex;
-  gap: 30px; /* 调整菜单链接之间的间距 */
-}
 
 
 
@@ -301,19 +278,19 @@ img:active {
 
 
 /* ----------------------------- 电脑中文章内容显示宽度 ------------------------- */
-/* 仅在屏幕宽度大于等于 1024px 时应用 */
-@media (min-width: 1024px) { 
+/* 仅在屏幕宽度大于等于 1024px 时应用、页脚上下文内容宽度 */
+/* @media (min-width: 1024px) { 
   .max-w-prose {
       max-width: 140ch;
-  }
-  
+  }  
 }
-/* 页脚上下文内容宽度 */
+
 @media (min-width: 1024px) { 
   .footer-max-w-prose {
       max-width: 85ch;
   }
-}
+} */
+
 
 /* 文章末尾作者信息中图片大小 */
 .w-footer-pic {
