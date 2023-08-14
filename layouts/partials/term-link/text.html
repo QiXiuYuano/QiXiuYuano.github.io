@@ -1,0 +1,25 @@
+<article class=" px-2 my-3 overflow-hidden tag-article ">
+    <h2 class="flex items-center">
+      <div class="box-container h2-hover">
+        <a class="tags-font font-medium decoration-primary-500 "
+          href="{{ .Page.RelPermalink }}">
+          {{ .Page.Title }}
+          {{ if site.Params.taxonomy.showTermCount | default true }}
+            <span class="text-base text-neutral-400 ">
+              <sup class="terms-count">{{ .Count }}</sup>
+            </span>
+          {{ end }}
+        </a>
+      </div>
+    </h2>
+  </article>
+
+
+  
+  
+
+  
+
+
+  
+  

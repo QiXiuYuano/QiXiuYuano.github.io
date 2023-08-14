@@ -16,8 +16,8 @@ mainSections = ["posts"]
 # robots = ""
 
 
-# disableImageZoom = false # 禁用站点中所有图像的图像缩放功能
-# disableImageOptimization = true # 禁用网站中所有图像的图像调整大小和优化功能
+disableImageZoom = false # 禁用站点中所有图像的图像缩放功能
+disableImageOptimization = false # 禁用网站中所有图像的图像调整大小和优化功能
 # defaultBackgroundImage = "/img/backgroud.png" # background主页布局默认背景图像
 # defaultFeaturedImage = "/img/ocean.jpg" # 文章中所有图像的默认背景图像
 
@@ -29,9 +29,9 @@ smartTOCHideUnfocusedChildren = true
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
 
 [footer]
-  showMenu = true
+  showMenu = false
   showCopyright = true
-  showThemeAttribution = true   # 是否在页脚展示 Power by
+  showThemeAttribution = false   # 是否在页脚展示 Power by
   showAppearanceSwitcher = true
   showScrollToTop = true
 
@@ -52,7 +52,7 @@ smartTOCHideUnfocusedChildren = true
   #showViews = true
   #showLikes = true
   showHero = true
-  heroStyle = "basic" # valid options: basic, big, background
+  heroStyle = "background" # valid options: basic, big, background
   layoutBackgroundBlur = true # heroStyle为background时,背景图片随着滚动变得模糊
   layoutBackgroundHeaderSpace = false # heroStyle为background时,在标题和正文之间添加空间
   showBreadcrumbs = true  # 多层目录嵌套时是否显示多级目录
@@ -65,7 +65,7 @@ smartTOCHideUnfocusedChildren = true
   seriesOpened = true
   showHeadingAnchors = true # 标题锚链接是否显示在文章内的标题旁边
   showPagination = true
-  invertPagination = false
+  invertPagination = true
   showReadingTime = true
   showTableOfContents = true  # 文章目录
   showTaxonomies = true

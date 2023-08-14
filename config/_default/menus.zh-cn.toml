@@ -44,37 +44,37 @@
 
 [[main]]
   identifier = "home"
-  name = "🏠主页"
+  name = "主页"
   url = "/" 
   weight = 10
 
 [[main]]
   identifier = "posts"
-  name = "📚文章"
+  name = "文章"
   pageRef = "posts"
   weight = 10
 
 [[main]]
   identifier = "categories"
-  name = "🗃️分类"
+  name = "分类"
   pageRef = "categories"
   weight = 40
 
 [[main]]
   identifier = "tags"
-  name = "🏷️标签"
+  name = "标签"
   pageRef = "tags"
   weight = 20
 
 [[main]]
   identifier = "about"
-  name = "🙋🏻‍♂️关于"
+  name = "关于"
   pageRef = "about"
-  weight = 40
+  weight = 50
 
 [[main]]
   identifier = "links"
-  name = "🤝友链"
+  name = "友链"
   pageRef = "links"
   weight = 40
 

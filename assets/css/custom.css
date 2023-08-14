@@ -1,3 +1,5 @@
+/* -------------------------------------------  对主题中部分样式的自定义 ------------------------------ */
+
 /* 根据您的logo的选择器名称进行调整 */
 .logo {
   border-radius: 50%;
@@ -40,4 +42,401 @@ img:active {
 .mt-5 {
   margin-top: 0rem;
 }
+
+
+/* ------------------------------ 目录相关设置 ------------------------------------- */
+/* 设置目录标题样式 */
+.toc h2 {
+  font-size: 24px; /* 设置字体大小 */
+  color: #4e4d4d; /* 设置字体颜色 */
+}
+
+.toc a {
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral-700), var(--tw-text-opacity));
+}
+
+:is(.dark .toc a) {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral-400), var(--tw-text-opacity));
+}
+
+/* 设置目录项之间的间距 */
+.toc a,
+.toc h2 {
+  margin-bottom: 0px; 
+}
+
+.toc ul,
+.toc li {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 1.55;
+}
+/* 添加额外的样式来实现字体颜色高亮效果 */
+.toc a.active {
+  color: #16982b; /* 目录字体颜色 */
+  text-decoration-line: none; /* 移除下划线效果 */
+  font-size: 1.1em; /* 放大选中目录的字体大小 */
+  transform: scale(1.1); /* 选中目录的微小放大效果 */
+  font-weight: 600; /* 微微加粗选中目录的字体 */
+}
+
+/* 调整页面左右边距，让目录更靠右 */
+.lg\:px-32 {
+  padding-left: 8rem;
+  padding-right: 1rem;
+}
+
+
+/* .prose 类中的激活状态（active）的锚点（<a> 标签） */
+/* .prose :where(a.active):not(:where([class~="not-prose"] *)) {
+  color: #16982b; 
+}
+
+.prose :where(p.active):not(:where([class~="not-prose"] *)) {
+  color: #16982b; 
+}
+
+.prose-invert :where(a.active):not(:where([class~="not-prose"] *)) {
+  color: #16982b; 
+}
+
+.prose-invert :where(p.active):not(:where([class~="not-prose"] *)) {
+  color: #16982b; 
+} */
+
+
+
+
+/* ----------------- 主页相关设置：图片、相关描述、最近文章列表等 ------------------------ */
+.text-honename {
+  font-size: 2.15rem; /* Name字体大小  */
+  line-height: 3.5rem;
+}
+
+.text-describe {
+  font-size: 1.25rem;  /* 个人描述字体大小  */
+  line-height: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.text-link {
+  font-size: 1.75rem;    /* 链接图标大小  */
+  line-height: 2rem;
+}
+
+/* 主页列表相关设置、  */
+.text-xl {
+  font-size: 1.5rem;   /* 标题字体大小  */
+  line-height: 1.95rem;
+  /* padding-top: 0.25rem; */
+  padding-bottom: 0.25rem;
+}
+
+.text-xs {
+  font-size: 0.85rem; /* 文章总结字体大小  */
+  line-height: 1rem;
+}
+
+.\!text-primary-700 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(var(--color-primary-700), var(--tw-text-opacity)) !important; /* 列表中标签分类颜色  */
+}
+
+
+/* 主页列表中时间字数等信息字体大小、页脚©字体大小   */
+.text-sm {
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+}
+
+/* 页眉、页脚菜单字体大小  */
+.text-base {
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+
+/* 设置面包屑导航上下间距 */
+.text-breadcrumbs {
+  font-size: 1.15rem;
+  line-height: 2.75rem;
+}
+
+/* 鼠标悬停面包屑高亮 */
+.breadcrumbs:hover {
+  color: #16982b;
+}
+
+/* 设置菜单栏与面包屑导航之间间距 */
+.min-h-\[148px\] {
+  min-height: 120px;
+}
+
+
+/* 正文中时间字数等信息字体大小  */
+.text-articlemeta {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.description {
+  font-size: 1.2rem; /* 文章描述字体大小  */
+  line-height: 2.5rem;
+}
+
+/* 修改下划线相关设置 */
+.active {
+  text-decoration-line: none;
+}
+
+
+
+/* 主页最近文章列表标题下划线效果 */
+.article-title-link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.article-title-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0.15em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0.1em;
+  background-color: rgba(var(--color-primary-500), 1);
+  transition: width 0.35s ease-in-out;
+  opacity: 0;
+}
+
+/* 悬停时显示下划线 */
+.article-title-link:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+
+.group:hover .group-hover\:underline {
+  text-decoration-line: none;
+  color: rgba(var(--color-primary-500),1) ;
+}
+
+
+
+/* --------------------------------- 顶部菜单栏相关设置 --------------------------------- */
+
+/* 博客标题鼠标悬停样式表 */
+.navbar-title:hover {
+  color: rgba(var(--color-primary-500),1); 
+}
+
+/* 菜单栏添加下划线效果 */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0.25em;
+  background-color: rgba(var(--color-primary-500),1) ; /* 下划线颜色 */
+  transition: all 0.5s ease!important; /* cubic-bezier(0.4, 0, 0.2, 1)使用贝塞尔曲线来实现先快后慢的过渡效果 */
+  opacity: 0;
+}
+
+.nav-link:hover{
+  color: rgba(var(--color-primary-500),1);  /* 悬停时显示下划线 */
+}
+.nav-link:hover::before {
+  width: 150%;
+  opacity: 1;
+}
+
+/* 调整菜单链接之间的右间距 */
+.menu-space {
+  display: flex;
+  gap: 30px; /* 调整菜单链接之间的间距 */
+}
+
+
+
+ /* 页脚上下文边框虚线粗细 */
+ hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 2px;
+  /* 3 */
+}
+
+
+/* -------------------------- 下划线样式修改 -------------------------- */
+/* .chroma .gl {
+  text-decoration-line: underline;
+} */
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.15em; /* 下划线粗细 */
+  text-underline-offset: 0.5em; /* 下划线位置（偏移） */
+  text-decoration-color: rgba(var(--color-primary-500),1); 
+  color: rgba(var(--color-primary-500),1);
+}
+
+
+/* ----------------------------- 电脑中文章内容显示宽度 ------------------------- */
+/* 仅在屏幕宽度大于等于 1024px 时应用 */
+@media (min-width: 1024px) { 
+  .max-w-prose {
+      max-width: 140ch;
+  }
+  
+}
+/* 页脚上下文内容宽度 */
+@media (min-width: 1024px) { 
+  .footer-max-w-prose {
+      max-width: 85ch;
+  }
+}
+
+/* 文章末尾作者信息中图片大小 */
+.w-footer-pic {
+  width: 5rem;
+}
+
+.h-footer-pic {
+  height: 5rem;
+}
+
+/* 文章末尾上下篇标题鼠标悬停抖动效果 */
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.title-slide {
+  transition: transform 0.3s ease-in-out;
+}
+
+.title-container:hover .title-slide {
+  transform: translateX(5px);
+  color: #16982b;
+}
+
+/* 回到顶部按钮自定义 */
+.up-arrow-box {
+  display: inline-flex; /* 使用 flex 布局以实现图标的垂直居中 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  background-color: #f2ffee;
+  padding: 8px;
+  border-radius: 10px;
+  width: 70px;
+  height: 50px;
+  transition: transform 0.2s ease-out; /* 添加过渡效果 */
+}
+
+.up-arrow {
+  font-size: 0.8em;
+  transform: rotate(90deg);
+  color: rgb(114, 113, 113);
+}
+
+.up-arrow-box:hover {
+  transform: translate(0, -4px); /* 鼠标悬停时向上微微滑动 */
+}
+
+ /* Copyright居中显示及相关字体大小 */
+ .copyright-text-sm {
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+
+
+
+/* 标签云 */
+
+/* 分类、标签字体与内容间距 */
+.tag-mb-2 {
+  margin-bottom: 2rem;
+}
+
+
+/* --------------- 标签、分类设置 ------------------- */
+.tags-font {
+  font-size: 18px;
+}
+
+.terms-count {
+  color: #16982b;
+  font-size: 16px;
+}
+.dark .terms-count {
+  color: #0bdc2ed7;
+  font-size: 13px;
+}
+
+.tag-article {
+  padding: 5px 8px; /* 调整标签之间填充间隔 */
+}
+
+.section-pad {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.box-container {
+  background-color: #f0f0f0; /* 背景颜色 */
+  padding: 8px; /* 调整边框内填充大小 */
+  text-align: center; /* 内容居中 */
+  border-radius: 12px;
+}
+.dark .box-container {
+  background-color: #5f5f5f; /* 背景颜色 */
+  padding: 12px; /* 调整边框内填充大小 */
+  text-align: center; /* 内容居中 */
+  border-radius: 12px;
+}
+
+.h2-hover {
+  transition: transform 0.3s ease-in-out; /* 添加过渡效果 */
+}
+
+.h2-hover:hover {
+  transform: scale(1.15); /* 在悬停时微微放大 */
+}
+
+
+/* 调整 Utterances 评论区的宽度 */
+#tcomment {
+  max-width: 140ch; /* 你可以根据需要调整宽度 */
+  margin: 0 auto; /* 居中显示 */
+}
+
+
+/* #tcomment.footer-max-w-prose {
+  max-width: 2000px;
+  margin: 0 auto;
+} */
+
+
+
+
+
 

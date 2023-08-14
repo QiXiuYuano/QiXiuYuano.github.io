@@ -7,9 +7,7 @@ summary: "" # 文章简单描述，会展示在主页
 categories: 
 - 分类1
 - 分类2
-tags: 
-- 标签1
-- 标签2
+tags: ["", ""]
 series: ""
 description: "" # 文章描述，与搜索优化相关
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
