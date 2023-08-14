@@ -58,7 +58,7 @@
   identifier = "categories"
   name = "分类"
   pageRef = "categories"
-  weight = 40
+  weight = 30
 
 [[main]]
   identifier = "tags"
@@ -70,18 +70,18 @@
   identifier = "about"
   name = "关于"
   pageRef = "about"
-  weight = 50
+  weight = 40
 
 [[main]]
   identifier = "links"
   name = "友链"
   pageRef = "links"
-  weight = 40
+  weight = 50
 
 [[main]]
   pre = "github"
   url = "https://github.com/QiXiuYuano"
-  weight = 50
+  weight = 60
 
 
 
