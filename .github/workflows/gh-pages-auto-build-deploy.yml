@@ -29,9 +29,10 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
+          personal_token: ${{ secrets.GH_PAGE_ACTION_TOKEN }}
           external_repository: QiXiuYuano/QiXiuYuano.github.io
-          github_token: ${{ secrets.GH_PAGE_ACTION_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./public
           commit_message: ${{ github.event.head_commit.message }}
-          publish_branch: gh-pages	
+          	
 
