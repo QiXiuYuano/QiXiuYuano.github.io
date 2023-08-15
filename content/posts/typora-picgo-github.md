@@ -24,7 +24,7 @@ showSummary: true
 
 需要先下载安装好 `Typora` 和 `PicGo`
 
-## 2 Typora设置
+## 2 Typora设置是否隐藏文章的元信息如发布日期等
 
 1. 打开Typora工具，打开`菜单栏`—`文件`—`偏好设置`—`图像`
 2. 上传服务选择：`PicGo`;PicGo路径选择PicGo安装路径下PicGo.exe
@@ -69,7 +69,7 @@ showSummary: true
 
 
 
-## 5 测试：
+## 5 测试
 
 1. `打开Typora` —> `偏好设置` —> `图像` —> `设置如下` —> `点击验证图片上传选项`：
 

@@ -45,10 +45,15 @@ img:active {
 
 
 /* ------------------------------ 目录相关设置 ------------------------------------- */
-/* 设置目录标题样式 */
+/* 设置目录标题样式：两种主题 */
 .toc h2 {
   font-size: 24px; /* 设置字体大小 */
-  color: #4e4d4d; /* 设置字体颜色 */
+  color: rgba(var(--color-neutral-700),var(--tw-text-opacity)); /* 设置字体颜色 #4e4d4d */
+}
+.dark .toc h2 {
+  font-size: 24px; /* 设置字体大小 */
+  /* color: #bab9b9; */
+  color: rgba(var(--color-neutral-400),var(--tw-text-opacity));
 }
 
 .toc a {
@@ -83,13 +88,6 @@ img:active {
   transform: scale(1.1); /* 选中目录的微小放大效果 */
   font-weight: 600; /* 微微加粗选中目录的字体 */
 }
-
-/* 调整页面左右边距，让目录更靠右 */
-/* .lg\:px-32 {
-  padding-left: 8rem;
-  padding-right: 1rem;
-} */
-
 
 
 
@@ -335,12 +333,32 @@ img:active {
   color: rgb(114, 113, 113);
 }
 
+.dark .up-arrow-box {
+  display: inline-flex; /* 使用 flex 布局以实现图标的垂直居中 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  background-color: #797798;
+  padding: 8px;
+  border-radius: 10px;
+  width: 70px;
+  height: 50px;
+  transition: transform 0.2s ease-out; /* 添加过渡效果 */
+}
+
+.dark .up-arrow {
+  font-size: 0.8em;
+  transform: rotate(90deg);
+  color: rgb(21, 21, 21);
+}
+
 .up-arrow-box:hover {
   transform: translate(0, -4px); /* 鼠标悬停时向上微微滑动 */
 }
 
+
+
  /* Copyright居中显示及相关字体大小 */
- .copyright-text-sm {
+.copyright-text-sm {
   font-size: 0.85rem;
   line-height: 1.25rem;
 }
@@ -407,12 +425,161 @@ img:active {
 }
 
 
-/* #tcomment.footer-max-w-prose {
-  max-width: 2000px;
-  margin: 0 auto;
-} */
+/* 电脑中显示的文章布局设置：文章-目录 */
 
+@media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
 
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:sticky {
+    position: sticky;
+  }
+
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:top-10 {
+    top: 2.5rem;
+  }
+
+  .lg\:top-\[140px\] {
+    top: 140px;
+  }
+
+  .lg\:order-last {
+    order: 9999;
+  }
+
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lg\:ml-auto {
+    margin-left: auto;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:h-72 {
+    height: 18rem;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .lg\:max-w-none {
+    max-width: none;
+  }
+
+  .lg\:max-w-xs {
+    max-width: 18rem;
+  }
+
+  .lg\:grid-flow-col-dense {
+    grid-auto-flow: column dense;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem;
+  }
+
+  .lg\:p-\[12vh\] {
+    padding: 12vh;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:pl-8) {
+    padding-left: 4rem;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pr-8) {
+    padding-right: 2rem;
+  }
+
+  .max-w-prose {
+    max-width: 80ch;
+  }
+
+  .footer-max-w-prose {
+    max-width: 70ch;
+  }
+}
+}
 
 
 
