@@ -319,18 +319,17 @@ img:active {
   display: inline-flex; /* 使用 flex 布局以实现图标的垂直居中 */
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  background-color: #f2ffee;
-  padding: 8px;
+  /* background-color: rgba(65, 65, 65, 0.789); */
+  /* padding: 8px;
   border-radius: 10px;
   width: 70px;
-  height: 50px;
+  height: 50px; */
   transition: transform 0.2s ease-out; /* 添加过渡效果 */
 }
 
 .up-arrow {
   font-size: 0.8em;
-  transform: rotate(90deg);
-  color: rgb(114, 113, 113);
+
 }
 
 /* .dark .up-arrow-box {
@@ -375,16 +374,16 @@ img:active {
 
 /* --------------- 标签、分类设置 ------------------- */
 .tags-font {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .terms-count {
   color: #16982b;
-  font-size: 16px;
+  font-size: 14px;
 }
 .dark .terms-count {
   color: #0bdc2ed7;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .tag-article {
@@ -398,13 +397,13 @@ img:active {
 
 .box-container {
   background-color: #f0f0f0; /* 背景颜色 */
-  padding: 8px; /* 调整边框内填充大小 */
+  padding: 5px 5px; /* 调整边框内填充大小 */
   text-align: center; /* 内容居中 */
   border-radius: 12px;
 }
 .dark .box-container {
   background-color: #5f5f5f; /* 背景颜色 */
-  padding: 12px; /* 调整边框内填充大小 */
+  padding: 5px 5px; /* 调整边框内填充大小 */
   text-align: center; /* 内容居中 */
   border-radius: 12px;
 }

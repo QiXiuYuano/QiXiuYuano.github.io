@@ -16,7 +16,7 @@ mainSections = ["posts"]
 # robots = ""
 
 
-disableImageZoom = false # 禁用站点中所有图像的图像缩放功能
+disableImageZoom = true # 禁用站点中所有图像的图像缩放功能
 disableImageOptimization = false # 禁用网站中所有图像的图像调整大小和优化功能
 # defaultBackgroundImage = "/img/backgroud.png" # background主页布局默认背景图像
 # defaultFeaturedImage = "/img/ocean.jpg" # 文章中所有图像的默认背景图像
