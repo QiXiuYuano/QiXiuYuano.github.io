@@ -333,17 +333,17 @@ img:active {
   color: rgb(114, 113, 113);
 }
 
-.dark .up-arrow-box {
-  display: inline-flex; /* 使用 flex 布局以实现图标的垂直居中 */
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
+/* .dark .up-arrow-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; 
   background-color: #797798;
   padding: 8px;
   border-radius: 10px;
   width: 70px;
   height: 50px;
-  transition: transform 0.2s ease-out; /* 添加过渡效果 */
-}
+  transition: transform 0.2s ease-out; 
+} */
 
 .dark .up-arrow {
   font-size: 0.8em;
@@ -575,12 +575,40 @@ img:active {
     max-width: 80ch;
   }
 
+  /* 文章下面页脚部分宽度大小 */
   .footer-max-w-prose {
     max-width: 70ch;
   }
-}
+
+  /* 图片较小时居中显示 */
+  
+  .max-w-prose img {
+    max-width: 100%; /* 图片的最大宽度不超过父容器 */
+    display: block; /* 将图片转换为块级元素 */
+    margin: 0 auto; /* 居中显示图片 */
+  }
+  
 }
 
+/* 上一篇、下一篇上下虚线间隔 字体颜色？？ */
+.custom-border {
+  background-color: #f5f5f5;
+  /* border: 1px solid #ddd; */
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.dark .custom-border {
+  background-color: #47474781;
+  /* border: 1px solid #ddd; */
+  border-radius: 12px;
+  padding: 12px;
+}
+
+
+.footer-pt-3 {
+  padding-top: 2rem;
+}
 
 
 
