@@ -1,18 +1,18 @@
 # 博客网站主页语言、个人信息的设置
 languageCode = "zh-cn"
-languageName = "Chinese"
+languageName = "Simplified Chinese"
 weight = 1
 
 title = "柒修远的个人博客"
 
 [params]
-  displayName = "CN"
+  displayName = "zh-CN"
   isoCode = "zh-cn"
   rtl = false
   dateFormat = "2006-01-02"
   logo = "img/GeNie.png"
   description = "柒修远的个人博客"
-  copyright = "Copyright © 2023 柒修远的个人博客. All Rights Reserved. Powered by Hugo & Blowfish.  "
+  # copyright = "Copyright © 2023 柒修远的个人博客. Powered by Hugo & Blowfish.  "
   
 
 [author]

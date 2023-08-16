@@ -31,7 +31,7 @@ smartTOCHideUnfocusedChildren = true
 [footer]
   showMenu = false
   showCopyright = true
-  showThemeAttribution = false   # 是否在页脚展示 Power by
+  showThemeAttribution = true   # 是否在页脚展示 Power by
   showAppearanceSwitcher = true
   showScrollToTop = true
 
